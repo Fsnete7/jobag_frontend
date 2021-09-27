@@ -4,8 +4,8 @@
       <!--Drawer Icon-->
       <v-app-bar-nav-icon align="right" @click.stop="drawer = !drawer" color="white"></v-app-bar-nav-icon>
 
-      <v-spacer></v-spacer>
-        <v-btn icon depressed to="/home_postulant">
+
+        <v-btn class="center" icon depressed to="/home_postulant">
           <v-avatar size="100">
             <v-img
                 max-height="70"
@@ -14,7 +14,7 @@
           </v-avatar>
         </v-btn>
 
-      <v-spacer></v-spacer>
+<!--      <v-spacer></v-spacer>-->
 
       <v-btn icon depressed to="/patientProfile" >
         <v-avatar right color=#1955AE size="50">
@@ -25,7 +25,8 @@
         </v-avatar>
       </v-btn>
 
-      <v-btn class="text_bienvenido" plain> Bienvenido </v-btn>
+
+      <h4 class="text_bienvenido"> Bienvenido</h4>
       <v-btn dark class="boton_logout" color="#EA4E4E">Log Out</v-btn>
     </v-app-bar>
 
@@ -142,11 +143,20 @@ export default {
 .text_bienvenido{
   font-size: 18px;
   font-family: "Roboto", sans-serif;
+  padding: 10px 10px 10px 10px;
 }
 
 .text_sidebar{
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: white;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: 30%;
+  width: 50%;
+  position: center;
 }
 </style>

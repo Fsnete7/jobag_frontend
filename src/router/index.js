@@ -11,6 +11,11 @@ const routes = [
     component: Home
   },
   {
+    path: '/home_postulant',
+    name: 'home_postulant',
+    component: () => import('../components/home_postulant')
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting

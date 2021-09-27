@@ -1,6 +1,5 @@
-<template>
 
-</template>
+<h1>Hola Mundo</h1>
 
 <script>
 export default {

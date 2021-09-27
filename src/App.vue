@@ -1,30 +1,23 @@
 <template>
-  <v-app id="inspire">
-    <v-app-bar
-        app
-        shrink-on-scroll
-    >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
-
-      <v-toolbar-title>Application</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-
-      <v-btn icon>
-        <v-icon>mdi-dots-vertical</v-icon>
-      </v-btn>
-    </v-app-bar>
-
-    <v-main>
-      <v-container>
-
-      </v-container>
-    </v-main>
-  </v-app>
+  <main-nav-postulant></main-nav-postulant>
 </template>
 
 <script>
+
+import MainNavPostulant from "@/components/main-nav-postulant";
+
+
+
 export default {
-  //
+  components: {
+    MainNavPostulant
+  },
+  data: () => ({
+    //
+  })
 }
 </script>
+
+<!--  <v-btn plain to="/home" color="white">Home</v-btn> |
+      <v-btn plain to="/homepage" color="white">Casita</v-btn> |
+      <v-btn plain to="/about" color="white">About</v-btn>-->
