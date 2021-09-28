@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import HomePostulant from '../components/home_postulant'
 import WatchJob from '../components/watch_job'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -28,6 +29,30 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+  },
+  {
+    path: '/create-ad',
+    name: 'create_job_ad',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/create-job-ad')
+  },
+  {
+    path: '/choose-postulant',
+    name: 'choose_postulant',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/choose-postulant')
+  },
+  {
+    path: '/home-employer',
+    name: 'home_employer',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/home-employer')
   }
 ]
 
