@@ -7,6 +7,7 @@ import Postulation from "../components/postulation-step-1";
 import Postulation2 from '../components/postulation-step-2';
 import Postulation3 from '../components/postulation-step-3'
 import ConfirmationPostulation from '../components/confirmation-postulation'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -53,6 +54,30 @@ const routes = [
     path: '/watch_job/confirmation',
     name: 'confirmation-postulation',
     component: ConfirmationPostulation
+  },
+  {
+    path: '/create-ad',
+    name: 'create_job_ad',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/create-job-ad')
+  },
+  {
+    path: '/choose-postulant',
+    name: 'choose_postulant',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/choose-postulant')
+  },
+  {
+    path: '/home-employer',
+    name: 'home_employer',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/home-employer')
   }
 
 ]
