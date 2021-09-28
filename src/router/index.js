@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-
+import HomePostulant from '../components/home_postulant'
+import WatchJob from '../components/watch_job'
 Vue.use(VueRouter)
 
 const routes = [
@@ -13,7 +14,12 @@ const routes = [
   {
     path: '/home_postulant',
     name: 'home_postulant',
-    component: () => import('../components/home_postulant')
+    component: HomePostulant
+  },
+  {
+    path: '/watch_job',
+    name: 'watch_job',
+    component: WatchJob
   },
   {
     path: '/about',

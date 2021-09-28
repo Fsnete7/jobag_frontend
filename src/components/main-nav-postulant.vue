@@ -2,21 +2,19 @@
   <div>
     <v-app-bar app color=#FFFFFF>
       <!--Drawer Icon-->
-      <v-app-bar-nav-icon align="right" @click.stop="drawer = !drawer" color="white"></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon align="right" @click.stop="drawer = !drawer" color="blue"></v-app-bar-nav-icon>
 
-
-        <v-btn class="center" icon depressed to="/home_postulant">
-          <v-avatar size="100">
+          <v-avatar class="center" size="100">
             <v-img
                 max-height="70"
                 max-width="70"
                 src="../assets/logo.png"></v-img>
           </v-avatar>
-        </v-btn>
+
 
 <!--      <v-spacer></v-spacer>-->
 
-      <v-btn icon depressed to="/patientProfile" >
+      <v-btn icon depressed>
         <v-avatar right color=#1955AE size="50">
           <v-img
               max-height="50"
@@ -38,15 +36,15 @@
 
         <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
 
-          <v-list-item>
+          <v-list-item to="/home_postulant">
             <v-list-item-content>
               <v-list-item-title class="text_sidebar">Inicio</v-list-item-title>
-
             </v-list-item-content>
           </v-list-item>
           <v-divider
               inset
           ></v-divider>
+
           <v-list-item>
             <v-list-item-title class="text_sidebar">Postular</v-list-item-title>
             <v-divider
@@ -102,16 +100,6 @@
               inset
           ></v-divider>
 
-          <v-list-item v-for="item in items" :key="item" link :to=item.route>
-
-            <v-list-item-icon>
-              <v-icon>{{ item.icon }}</v-icon>
-            </v-list-item-icon>
-            <v-list-item-content>
-              {{ item.text }}
-              <v-divider></v-divider>
-            </v-list-item-content>
-          </v-list-item>
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
