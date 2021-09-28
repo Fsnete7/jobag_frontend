@@ -32,7 +32,9 @@
                 </v-row>
               </v-container>
             </v-form>
-          <btn-create-dialog v-bind:lblbtn="'Aceptar'" text="Anuncio Creado Satisfactoriamente" ></btn-create-dialog>
+            <div class="text-right">
+              <btn-create-dialog v-bind:lblbtn="'Aceptar'" text="Anuncio Creado Satisfactoriamente" ></btn-create-dialog>
+            </div>
           </v-container>
         </v-content>
     </v-app>

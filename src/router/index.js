@@ -78,6 +78,22 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/home-employer')
+  },
+  {
+    path: '/approved-postulant',
+    name: 'approved_postulant',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/approved-postulant')
+  },
+  {
+    path: '/contract',
+    name: 'contract',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../views/contract')
   }
 
 ]

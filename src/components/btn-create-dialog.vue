@@ -1,11 +1,8 @@
 <template>
   <v-dialog transition="dialog-top-transition" max-width="600">
     <template v-slot:activator="{ on, attrs }">
-      <div class="text-right">
         <v-btn class="ma-2 white--text" :loading="loading" :disabled="loading" color="#1955AE"
             @click="loader = 'loading'" rounded  style="width: 20%" v-bind="attrs" v-on="on">{{ lblbtn }}</v-btn>
-      </div>
-
     </template>
     <template v-slot:default="dialog">
       <v-card>
