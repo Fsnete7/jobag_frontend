@@ -7,7 +7,7 @@ import Postulation from "../components/postulation-step-1";
 import Postulation2 from '../components/postulation-step-2';
 import Postulation3 from '../components/postulation-step-3'
 import ConfirmationPostulation from '../components/confirmation-postulation'
-
+import CreateInterview from '../components/create-interview'
 Vue.use(VueRouter)
 
 const routes = [
@@ -94,8 +94,12 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import('../views/contract')
-  }
-
+  },
+  {
+    path: '/create-interview',
+    name: 'create-interview',
+    component: CreateInterview
+  },
 ]
 
 const router = new VueRouter({

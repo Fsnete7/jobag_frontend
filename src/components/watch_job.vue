@@ -63,7 +63,6 @@
 
         <div class="text-center">
           <v-btn
-
               color="#EA4E4E"
               dark
               v-bind="attrs"
@@ -99,7 +98,7 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-    &nbsp;
+
   </v-card>
 
 </div>
